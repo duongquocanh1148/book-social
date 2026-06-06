@@ -1,7 +1,5 @@
 package com.devteria.notification.dto.response;
 
-import java.time.LocalDate;
-
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
@@ -10,10 +8,6 @@ import lombok.experimental.FieldDefaults;
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class UserProfileResponse {
-    String id;
-    String firstName;
-    String lastName;
-    LocalDate dob;
-    String city;
+public class EmailResponse {
+    String messageId;
 }

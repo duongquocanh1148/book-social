@@ -1,19 +1,19 @@
 package com.devteria.notification.dto.request;
 
-import java.time.LocalDate;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
+
+import java.util.List;
 
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class ProfileCreationRequest {
-    String userId;
-    String firstName;
-    String lastName;
-    LocalDate dob;
-    String city;
+public class EmailRequest {
+    Sender sender;
+    List<Recipient> to;
+    String subject;
+    String htmlContent;
 }
